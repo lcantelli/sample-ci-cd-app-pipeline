@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   tests:
-    name: Build
+    name: Main CI/CD
     runs-on: ubuntu-latest
     steps:
       - 
@@ -32,4 +32,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: lcantelli/sample-ci-cd-app:latest
+          tags: lcantelli/sample-ci-cd-app:${{ github.sha }}
