@@ -21,6 +21,6 @@ public class GreetingController {
 
     @GetMapping("/version")
     public String version() {
-        return "v3";
+        return "v4";
     }
 }
